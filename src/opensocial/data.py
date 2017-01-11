@@ -17,12 +17,11 @@
 
 __author__ = 'davidbyttow@google.com (David Byttow)'
 
-
 def extract_fields(json):
-  """Extracts a JSON dict of fields.
+  """Extracts a JSON dict of fields
   
   REST and RPC protocols use different JSON keys for OpenSocial objects. This
-  abstracts that and handles both cases.
+  abstracts that and handles both cases
   
   Args:
     json: dict The JSON object.
@@ -62,6 +61,10 @@ class Person(Object):
     """ 
     return self.get_field('id')
       
+  def new_function(self):
+    new_var = 'some random string'
+    return new_var
+
   def get_display_name(self):
     """Returns the full name of this Person.
     
